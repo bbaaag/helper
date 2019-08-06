@@ -1,0 +1,16 @@
+{
+    "name": "bbaaag/helper",
+    "description": "php 常用方法总结",
+    "authors": [
+        {
+            "name": "bbaaag",
+            "email": "b15737977957@126.com"
+        }
+    ],
+    "require": {},
+	"autoload": {
+        "psr-4": {
+            "bbaaag\\Hepler\\": "src"
+        }
+    }
+}
