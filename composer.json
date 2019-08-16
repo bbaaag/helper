@@ -7,7 +7,11 @@
             "email": "b15737977957@126.com"
         }
     ],
-    "require": {},
+    "require": {
+        "jbzoo/utils": "^2.3",
+        "nette/utils": "^2.5",
+        "brandonwamboldt/utilphp": "^1.1"
+    },
 	"autoload": {
         "psr-4": {
             "bbaaag\\Hepler\\": "src"
