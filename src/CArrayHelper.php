@@ -39,7 +39,7 @@ class CArrayHelper
      * Inserts new array before item specified by key.
      * @return void
      */
-    public static function insert_before_accoc(array &$arr, $key, array $inserted)
+    public static function insert_before_assoc(array &$arr, $key, array $inserted)
     {
         $offset = (int)self::search_key($arr, $key);
         $arr = array_slice($arr, 0, $offset, true) + $inserted + array_slice($arr, $offset, count($arr), true);
@@ -51,11 +51,29 @@ class CArrayHelper
      * Inserts new array after item specified by key.
      * @return void
      */
-    public static function insert_after_accoc(array &$arr, $key, array $inserted)
+    public static function insert_after_assoc(array &$arr, $key, array $inserted)
     {
         $offset = self::search_key($arr, $key);
         $offset = $offset === false ? count($arr) : $offset + 1;
         $arr = array_slice($arr, 0, $offset, true) + $inserted + array_slice($arr, $offset, count($arr), true);
+    }
+
+
+    /**
+     * 以指定的key ,vaule进行填充
+     * @param array $arr
+     * @param $length
+     * @param $pad_array
+     */
+    public static function array_pad_assoc(array $arr ,$length ,$key , $vaule)
+    {
+        if(abs($length) <= count($arr)) return $arr;
+
+        if($length > 0){
+
+        }
+
+        return $arr;
     }
 
 
@@ -67,7 +85,7 @@ class CArrayHelper
      * @param mixed  $value
      * @return array
      */
-    public static function unshift_assoc(array &$array, $key, $value): array
+    public static function unshift_assoc(array &$array, $key, $value)
     {
         $array = array_reverse($array, true);
         $array[$key] = $value;
