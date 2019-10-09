@@ -7,6 +7,10 @@
       <path value="$PROJECT_DIR$/vendor/jbzoo/utils" />
       <path value="$PROJECT_DIR$/vendor/nette/utils" />
       <path value="$PROJECT_DIR$/vendor/brandonwamboldt/utilphp" />
+      <path value="$PROJECT_DIR$/vendor/nikic/iter" />
+      <path value="$PROJECT_DIR$/vendor/danielstjules/stringy" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
     </include_path>
   </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />
 </project>

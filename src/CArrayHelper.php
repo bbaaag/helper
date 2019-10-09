@@ -69,6 +69,12 @@ class CArrayHelper
     {
         if(abs($length) <= count($arr)) return $arr;
 
+        $arr =[
+            'bai'=>'111',
+            'name'=>'bbaaag'
+        ];
+        if($arr['name'])
+
         if($length > 0){
 
         }

@@ -13,6 +13,7 @@ class CStringHelper
 {
 
 
+    public $ab;
     /**
      * 使用多个分隔符 进行分割
      * @param $delimiters
@@ -20,7 +21,8 @@ class CStringHelper
      * @return array
      * multie_xplode(array(",",".","|",":"),$text);
      */
-    function multi_explode ($delimiters,$string) {
+    public function multi_explode ($delimiters,$string) {
+
 
         $ready = str_replace($delimiters, $delimiters[0], $string);
         $launch = explode($delimiters[0], $ready);
@@ -125,13 +127,18 @@ class CStringHelper
      * @return bool
      */
 
-    function startsWith($haystack, $needle)
+    /**
+     * @param $haystack
+     * @param $needle
+     * @return bool
+     */
+    function starts_with($haystack, $needle)
     {
         return strpos($haystack, $needle) === 0;
     }
 
 
-    function wrap_link(){
+    function wrapLink(){
 
     }
 
